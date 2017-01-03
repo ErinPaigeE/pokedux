@@ -1,6 +1,7 @@
 import React, {Component, PropTypes} from 'react'
 import {fetchPokemonList} from '../actions/pokemonActions'
 import { connect } from 'react-redux'
+
 // import PokemonList from '../components/PokemonList'
 
 class PokemonListContainer extends Component {
@@ -14,11 +15,24 @@ class PokemonListContainer extends Component {
     dispatch(fetchPokemonList())
   }
 
+  getImage(index) {
+    return require('../../assets/images/' + index + ".png")
+  }
+
   render() {
     const {pokemonList, fetching, fetched, error} = this.props
     return (<div>
               <span>pokemons!</span>
-              {pokemonList.length ? <span>we got pokemon</span> : null }
+              {pokemonList.length ?
+                <ul>
+                  {pokemonList.map((pokemon, index) => {
+                    this.getImage(pokemon.index)
+                    var src = require('../../assets/images/' + pokemon.index + '.png')
+                    return <li key={index}><img src={src}></img></li>
+                  })}
+                </ul>
+                 : null
+               }
             </div>)
   }
 }

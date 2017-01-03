@@ -45,6 +45,11 @@ var config = {
             test: /\.scss$/,
             loaders: ["style", "css", "sass"],
             include: path.join(__dirname, 'app/styles')
+        },
+        {
+          //IMAGE LOADER
+          test: /\.(svg|png)$/,
+          loader: 'url-loader'
         }]
     }
 };
