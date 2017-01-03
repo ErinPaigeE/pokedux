@@ -3,7 +3,13 @@
 @import 'mixins/transition';
 @import 'mixins/animation';
 
+@import 'components/header';
+@import 'components/pokemon-list';
+@import 'components/pokemon-tile';
+
 
 html,body{
   margin: 0;
+
+  font-family: "Raleway", "Helvetica Neue", sans-serif;
 }

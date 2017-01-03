@@ -1,0 +1,10 @@
+.pokemon-list-container {
+  // background-color: blue;
+  .pokemon-list {
+    width: 90%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
