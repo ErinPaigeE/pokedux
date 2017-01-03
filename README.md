@@ -1,7 +1,9 @@
-# react_redux_todoMVC
-todo app MVC using react/redux/webpack
+# Pokédux
 
-Wanted to put together a boilerplate for react/redux projects that I actually understood, hoping this will be a good base for future projects.
+Pokèdex built using React, Redux, and the PokéAPI
 
-Link to project is available here: https://aron-todo-list.herokuapp.com/
+# Use
 
+Clone or download zip
+    ```npm install```
+    ```npm start```
